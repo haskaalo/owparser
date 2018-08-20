@@ -7,6 +7,7 @@ import (
 
 // General Data available even if account is private
 type General struct {
+	Private  bool   `json:"private"`
 	SR       int    `json:"rank,omitempty"`
 	Prestige int    `json:"prestige"`
 	Level    string `json:"level"`
@@ -18,6 +19,12 @@ var prestigeReplacer = strings.NewReplacer("background-image:url(https://d1u1mce
 // NewGeneral Get Data available even if account is private
 func (c *CareerProfile) NewGeneral() *General {
 	general := new(General)
+	permission := c.document.Find(".masthead-permission-level-text").First().Text()
+	if permission == "Public Profile" {
+		general.Private = false
+	} else {
+		general.Private = true
+	}
 
 	general.SR, _ = strconv.Atoi(c.document.Find(".masthead-player .competitive-rank").First().Text())
 
