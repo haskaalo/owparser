@@ -2,7 +2,7 @@
 
 [Fast](#Benchmark) Overwatch Stats Parser for Golang
 
-API docs: https://godoc.org/haskaalo/owparser
+API docs: https://godoc.org/github.com/haskaalo/owparser
 ## Benchmark
 
 ```
