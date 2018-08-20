@@ -7,7 +7,7 @@ type All struct {
 	Competitive *Stats `json:"competitive,omitempty"`
 }
 
-// NewAll Get all Stats together
+// NewAll Get all stats together
 func (c *CareerProfile) NewAll() *All {
 	all := new(All)
 	all.General = c.NewGeneral()

@@ -15,7 +15,7 @@ type General struct {
 
 var prestigeReplacer = strings.NewReplacer("background-image:url(https://d1u1mce87gyfbn.cloudfront.net/game/playerlevelrewards/", "", "_Border.png)", "")
 
-// NewGeneral from Goquery Document
+// NewGeneral Get Data available even if account is private
 func (c *CareerProfile) NewGeneral() *General {
 	general := new(General)
 

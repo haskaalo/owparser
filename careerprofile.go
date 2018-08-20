@@ -6,7 +6,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-// CareerProfile Get Do
+// CareerProfile ...
 type CareerProfile struct {
 	document *goquery.Document
 }

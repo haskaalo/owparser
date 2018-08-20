@@ -26,7 +26,7 @@ var TimeReplacer = strings.NewReplacer(" ", "", "minutes", "m", "minute", "m", "
 // RegexStatName Create a better JSON-looking key name for stats
 var RegexStatName = regexp.MustCompile(`[^a-zA-Z0-9]`)
 
-// NewStats Stats specific
+// NewStats Stats specific to a mode
 func (c *CareerProfile) NewStats(mode Mode) *Stats {
 	stats := new(Stats)
 	stats.TimePlayed = make(map[string]float64)
