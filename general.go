@@ -13,7 +13,7 @@ type General struct {
 	Portrait string `json:"portrait"`
 }
 
-var prestigeReplacer = strings.NewReplacer("https://d1u1mce87gyfbn.cloudfront.net/game/playerlevelrewards/", "", "_Border.png", "")
+var prestigeReplacer = strings.NewReplacer("background-image:url(https://d1u1mce87gyfbn.cloudfront.net/game/playerlevelrewards/", "", "_Border.png)", "")
 
 // NewGeneral from Goquery Document
 func (c *CareerProfile) NewGeneral() *General {
