@@ -6,10 +6,10 @@ API docs: https://godoc.org/github.com/haskaalo/owparser
 ## Benchmark
 
 ```
-BenchmarkNewAll-6                     50          33048516 ns/op         1364434 B/op      41591 allocs/op
-BenchmarkNewCareerProfile-6       200000              6394 ns/op            5115 B/op         13 allocs/op
-BenchmarkNewGeneral-6                500           3809964 ns/op            1920 B/op         37 allocs/op
-BenchmarkNewStats-6                  100          22889708 ns/op         1018035 B/op      31065 allocs/op
+BenchmarkNewAll-6                     50          22819708 ns/op         1363737 B/op      41589 allocs/op
+BenchmarkNewCareerProfile-6       200000              6470 ns/op            5096 B/op         13 allocs/op
+BenchmarkNewGeneral-6                500           2831965 ns/op            1160 B/op         34 allocs/op
+BenchmarkNewStats-6                  100          15433863 ns/op         1017985 B/op      31065 allocs/op
 ```
 
 ## License
